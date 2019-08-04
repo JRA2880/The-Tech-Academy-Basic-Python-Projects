@@ -1,15 +1,18 @@
 
 
-mySentence = "I love the color"
+mySentence = "loves the color"
 
-color_list = ['red','blue','green','orange','black']
+color_list = ['red','blue','green','white','black']
 
-def color_function():
-    i  = 0
+def color_function(name):
+    lst = []
     for i in color_list:
-        print('{0} {1}'.format(mySentence,color_list[i]))
+        msg = '{0} {1} {2}'.format(name,mySentence,i)
+        lst.append(msg)
+    return lst
 
 
-
-color_function()
+lst = color_function('Sally')
+for i in lst:
+    print(i)
 
